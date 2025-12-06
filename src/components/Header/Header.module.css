@@ -1,0 +1,115 @@
+.header {
+  padding-top: 32px;
+}
+
+.headerBox {
+  border-radius: 15px;
+  width: 1216px;
+  height: 74px;
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-Logo-1 {
+  width: 2.470703125em;
+}
+
+.iconLogo1 {
+  width: 42px;
+  height: 17px;
+  margin-right: 4px;
+}
+
+.iconLogo2 {
+  width: 136px;
+  height: 16px;
+}
+
+.link {
+  color: #686868;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 112%;
+  letter-spacing: -0.02em;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav2 {
+  display: flex;
+  gap: 16px;
+}
+
+.nav .link,
+.nav .link:visited {
+  color: #686868;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav .link:hover,
+.nav .link:focus {
+  color: #f9f9f9;
+}
+.active,
+.active:visited {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+.login,
+.registration {
+  color: #f9f9f9;
+  border: 1px solid rgba(249, 249, 249, 0.2);
+  border-radius: 30px;
+  padding: 12px 28px;
+  height: 42px;
+}
+
+.login:hover,
+.registration:hover,
+.login:focus,
+.registration:focus {
+  border: 1px solid #f9f9f9;
+}
+
+.nav .link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 3px;
+  border-radius: 8px;
+  background-color: #4f92f7;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+  color: #f9f9f9;
+}
+
+.nav .active::after {
+  transform: scaleX(1);
+}
+
+.nav .active,
+.nav .active:visited {
+  color: #f9f9f9;
+}
