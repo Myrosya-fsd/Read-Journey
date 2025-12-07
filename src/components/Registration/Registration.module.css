@@ -1,0 +1,163 @@
+.registrationWrapper {
+  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.registration {
+  border-radius: 30px;
+  width: 600px;
+  height: 736px;
+  background-color: #1f1f1f;
+  padding: 40px 64px;
+}
+
+.logo {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 107px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+.icon-Logo-1 {
+  width: 2.470703125em;
+}
+
+.iconLogo1 {
+  width: 42px;
+  height: 17px;
+  margin-right: 4px;
+}
+
+.iconLogo2 {
+  width: 136px;
+  height: 16px;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 94%;
+  letter-spacing: 0.02em;
+  color: #f9f9f9;
+  text-align: left;
+  width: 444px;
+  margin-bottom: 40px;
+}
+
+.titleSpan {
+  color: rgba(227, 227, 227, 0.5);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.wrapper {
+  text-align: left;
+  position: relative;
+}
+
+.label {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #686868;
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contactBlockInput {
+  border-radius: 12px;
+  padding: 16px 14px 16px 64px;
+  width: 472px;
+  height: 50px;
+  border: none;
+  background-color: #262626;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-align: start;
+  color: #f9f9f9;
+}
+
+.contactBlockInput2 {
+  padding-left: 53px;
+}
+
+.contactBlockInput3 {
+  padding-left: 86px;
+}
+
+.buttonBox {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 16px 54px;
+  width: 225px;
+  height: 52px;
+  background-color: #f9f9f9;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  color: #1f1f1f;
+}
+
+.btn:hover,
+.btn:focus {
+  transform: scale(1.05);
+}
+
+.buttonLink {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #686868;
+}
+
+.buttonLink:hover,
+.buttonLink:focus {
+  color: #f9f9f9;
+}
+
+.phofoBox {
+  border-radius: 30px;
+  width: 600px;
+  height: 736px;
+  background-color: #1f1f1f;
+  padding-top: 80px;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: center;
+}
