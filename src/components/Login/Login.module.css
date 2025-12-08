@@ -1,11 +1,11 @@
-.registrationWrapper {
+.loginWrapper {
   padding-top: 32px;
   display: flex;
   justify-content: center;
   gap: 16px;
 }
 
-.registration {
+.login {
   border-radius: 30px;
   width: 600px;
   height: 736px;
