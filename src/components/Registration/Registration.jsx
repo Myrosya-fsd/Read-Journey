@@ -81,51 +81,57 @@ const Registration = () => {
 
         <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.wrapper}>
-            <label htmlFor="user-name" className={styles.label}>
-              Name:
-            </label>
-            <input
-              id="user-name"
-              type="text"
-              placeholder="Ilona Ratushniak"
-              className={styles.contactBlockInput}
-              {...register("name")}
-              autoComplete="name"
-            />
+            <div className={styles.wrapperTwo}>
+              <label htmlFor="user-name" className={styles.label}>
+                Name:
+              </label>
+              <input
+                id="user-name"
+                type="text"
+                placeholder="Ilona Ratushniak"
+                className={styles.contactBlockInput}
+                {...register("name")}
+                autoComplete="name"
+              />
+            </div>
             {errors.name && (
               <p className={styles.error}>{errors.name.message}</p>
             )}
           </div>
 
           <div className={styles.wrapper}>
-            <label htmlFor="user-email" className={styles.label}>
-              Mail:
-            </label>
-            <input
-              id="user-email"
-              type="email"
-              placeholder="Your@email.com"
-              className={`${styles.contactBlockInput} ${styles.contactBlockInput2}`}
-              {...register("email")}
-              autoComplete="email"
-            />
+            <div className={styles.wrapperTwo}>
+              <label htmlFor="user-email" className={styles.label}>
+                Mail:
+              </label>
+              <input
+                id="user-email"
+                type="email"
+                placeholder="Your@email.com"
+                className={`${styles.contactBlockInput} ${styles.contactBlockInput2}`}
+                {...register("email")}
+                autoComplete="email"
+              />
+            </div>
             {errors.email && (
               <p className={styles.error}>{errors.email.message}</p>
             )}
           </div>
 
           <div className={styles.wrapper}>
-            <label htmlFor="user-password" className={styles.label}>
-              Password:
-            </label>
-            <input
-              id="user-password"
-              type="password"
-              placeholder="Yourpasswordhere"
-              className={`${styles.contactBlockInput} ${styles.contactBlockInput3}`}
-              {...register("password")}
-              autoComplete="new-password"
-            />
+            <div className={styles.wrapperTwo}>
+              <label htmlFor="user-password" className={styles.label}>
+                Password:
+              </label>
+              <input
+                id="user-password"
+                type="password"
+                placeholder="Yourpasswordhere"
+                className={`${styles.contactBlockInput} ${styles.contactBlockInput3}`}
+                {...register("password")}
+                autoComplete="new-password"
+              />
+            </div>
             {errors.password && (
               <p className={styles.error}>{errors.password.message}</p>
             )}

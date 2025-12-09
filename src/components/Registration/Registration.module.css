@@ -71,14 +71,19 @@
 
 .wrapper {
   text-align: left;
+}
+
+.wrapperTwo {
   position: relative;
+  display: flex;
+  align-items: center; /* вирівнюємо по центру по вертикалі */
 }
 
 .label {
   font-family: var(--font-family);
   font-weight: 500;
   font-size: 14px;
-  line-height: 129%;
+  line-height: 14px;
   letter-spacing: -0.02em;
   text-align: left;
   color: #686868;
@@ -101,6 +106,10 @@
   line-height: 129%;
   letter-spacing: -0.02em;
   text-align: start;
+  color: #f9f9f9;
+}
+
+input::placeholder {
   color: #f9f9f9;
 }
 

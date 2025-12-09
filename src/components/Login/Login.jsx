@@ -64,34 +64,41 @@ const Login = () => {
         </h1>
         <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
           <div className={styles.wrapper}>
-            <label htmlFor="user-email" className={styles.label}>
-              Mail:
-            </label>
-            <input
-              className={`${styles.contactBlockInput} ${styles.contactBlockInput2}`}
-              id="user-email"
-              type="email"
-              placeholder="Your@email.com"
-              {...register("email")}
-              autoComplete="email"
-            />
+            <div className={styles.wrapperTwo}>
+              <label htmlFor="user-email" className={styles.label}>
+                Mail:
+              </label>
+              <input
+                className={`${styles.contactBlockInput} ${styles.contactBlockInput2}`}
+                id="user-email"
+                type="email"
+                placeholder="Your@email.com"
+                {...register("email")}
+                autoComplete="email"
+              />
+            </div>
             {errors.email && (
               <p className={styles.error}>{errors.email.message}</p>
             )}
           </div>
 
           <div className={styles.wrapper}>
-            <label htmlFor="user-password" className={styles.label}>
-              Password:
-            </label>
-            <input
-              className={`${styles.contactBlockInput} ${styles.contactBlockInput3}`}
-              id="user-password"
-              type="password"
-              placeholder="Yourpasswordhere"
-              {...register("password")}
-              autoComplete="new-password"
-            />
+            <div className={styles.wrapperTwo}>
+              <label htmlFor="user-password" className={styles.label}>
+                Password:
+              </label>
+              <input
+                className={`${styles.contactBlockInput} ${styles.contactBlockInput3}`}
+                id="user-password"
+                type="password"
+                placeholder="Yourpasswordhere"
+                {...register("password")}
+                autoComplete="new-password"
+              />
+            </div>
+            {errors.password && (
+              <p className={styles.error}>{errors.password.message}</p>
+            )}
           </div>
           <div className={styles.buttonBox}>
             <button className={styles.btn} type="submit" disabled={!isValid}>
