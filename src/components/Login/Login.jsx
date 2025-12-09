@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
@@ -71,7 +71,7 @@ const Login = () => {
               className={`${styles.contactBlockInput} ${styles.contactBlockInput2}`}
               id="user-email"
               type="email"
-              placeholder=""
+              placeholder="Your@email.com"
               {...register("email")}
               autoComplete="email"
             />
@@ -88,7 +88,7 @@ const Login = () => {
               className={`${styles.contactBlockInput} ${styles.contactBlockInput3}`}
               id="user-password"
               type="password"
-              placeholder=""
+              placeholder="Yourpasswordhere"
               {...register("password")}
               autoComplete="new-password"
             />
@@ -97,9 +97,9 @@ const Login = () => {
             <button className={styles.btn} type="submit" disabled={!isValid}>
               Log in
             </button>
-            <a href="#" className={styles.buttonLink}>
-              Already have an account?
-            </a>
+            <Link to="/registration" className={styles.buttonLink}>
+              Don’t have an account?
+            </Link>
           </div>
         </form>
       </div>
